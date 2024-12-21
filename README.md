@@ -16,6 +16,6 @@ link 3: https://s.net.vn/pUFf 🔥
 
 •link: https://s.net.vn/Video-image-channel-key-Hjo55k
 
-*You can support me by going to the tiktok account: `@hsjnznsnsx` and buying a product to support me. If you have any questions, feel free to contact me.
+*You can support me by going to the tiktok account: `@hsjnznsnsx` and buying a product to support me. If you have any questions, feel free to contact me 😘
 
         
