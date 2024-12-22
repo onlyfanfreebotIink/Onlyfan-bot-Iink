@@ -12,4 +12,4 @@
 
 ° _My Telegram community link_ °
 
-🔗 link: https://s.net.vn/Video-image-channel-key-Hjo55k
+🔗 link: https://s.net.vn/Video-image-Chanel🔞-telegram
