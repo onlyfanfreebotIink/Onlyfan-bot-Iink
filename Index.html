@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quảng Cáo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        #video-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #skip-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        #skip-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .message {
+            margin-top: 20px;
+        }
+
+        .message a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .message a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Chào mừng bạn đến với trang web của chúng tôi!</h1>
+    <p>Trước khi tiếp tục, vui lòng xem quảng cáo ngắn này để tiếp cận nội dung.</p>
+
+    <div id="video-container">
+        <video id="ad-video" autoplay>
+            <source src="YOUR_AD_VIDEO_URL.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="skip-btn" onclick="skipAd()">Skip</button>
+    </div>
+
+    <div class="message">
+        <p>Quảng cáo sẽ kết thúc sau vài giây. Cảm ơn bạn đã kiên nhẫn!</p>
+    </div>
+
+    <footer>
+        <p>© 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    var video = document.getElementById('ad-video');
+    var skipBtn = document.getElementById('skip-btn');
+    var redirectUrl = "https://t.me/PAWSOG_bot/PAWS?startapp=WZWswyx2";
+
+    // Show skip button after 30 seconds
+    setTimeout(function() {
+        skipBtn.style.display = 'block';
+    }, 30000); // Show after 30s
+
+    // Skip ad when button is clicked
+    function skipAd() {
+        video.pause();
+        window.location.href = redirectUrl;
+    }
+
+    // After video ends, redirect to the link
+    video.onended = function() {
+        window.location.href = redirectUrl;
+    }
+
+    // When the user comes back, show the ad again
+    window.onbeforeunload = function() {
+        sessionStorage.setItem('adShown', 'true');
+    };
+
+    // If session data is present, skip the ad
+    if (sessionStorage.getItem('adShown') === 'true') {
+        window.location.href = redirectUrl;
+    }
+</script>
+
+</body>
+</html>
