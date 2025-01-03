@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Video Page</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        /* Container for main content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        /* Video grid styling */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        /* Video item container styling */
+        .video-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Image styling */
+        .video-item img {
+            width: 100%;
+            height: auto;
+            image-rendering: crisp-edges;
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Hover effect for images */
+        .video-item img:hover {
+            transform: scale(1.05);
+        }
+        /* Title styling */
+        .video-item h3 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        /* Description styling */
+        .video-item p {
+            margin: 0;
+            padding: 0 10px 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        /* Additional container for more items */
+        .more-video-items {
+            margin-top: 40px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Sample Video Page</h1>
+    </header>
+    
+    <!-- Main Content Section -->
+    <div class="container">
+        <!-- Video Grid -->
+        <div class="video-grid">
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 1</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 2</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 3</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 4</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <!-- Additional Videos -->
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 5</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 6</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 7</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                <h3>Sample Video 8</h3>
+                <p>Description of the video goes here.</p>
+            </div>
+        </div>
+        
+        <!-- More Video Items Section -->
+        <div class="more-video-items">
+            <h2>More Videos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Sample Video 9</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+                <div class="video-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Sample Video 10</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+                <div class="video-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Sample Video 11</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+                <div class="video-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Sample Video 12</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sample Video Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
